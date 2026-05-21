@@ -30,17 +30,26 @@ sudo curl -L [https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp](
 sudo chmod a+rx /usr/local/bin/yt-dlp
 ```
 
-## 📦 Usage
+## 📦 Setup & Usage
 
-1. Make the script executable:
+### 1. Clone the Repository
+The easiest way to get the script onto your machine is to clone it using `git clone`:
+```bash
+git clone [https://github.com/trrt54999/yt-sh-downloader.git](https://github.com/trrt54999/yt-sh-downloader.git)
+cd yt-sh-downloader
+```
+
+### 2. Make the Script Executable
+Before running the script for the first time, give it execution permissions:
 ```bash
 chmod +x downloader.sh
 ```
 
-2. Run the script by providing the YouTube URL.
-**Note**: You must enclose the URL in **straight double quotes** (`" "`) to prevent terminal errors (especially in Fish or Zsh due to characters like `?` or `&`).
+### 3. Run the Script
+Provide the YouTube video URL as an argument. 
 
-*Example:*
+**Note**: You must enclose the URL in **straight double quotes** (`" "`) to prevent terminal errors (especially in Fish or Zsh due to special characters like `?` or `&`):
+
 ```bash
 ./downloader.sh "https://youtu.be/dQw4w9WgXcQ"
 ```
