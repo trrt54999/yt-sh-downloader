@@ -28,3 +28,26 @@ sudo apt update
 sudo apt install ffmpeg -y
 sudo curl -L [https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp) -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
+```
+
+## 📦 Usage
+
+1. Make the script executable:
+```bash
+chmod +x downloader.sh
+```
+
+2. Run the script by providing the YouTube URL.
+**Note**: You must enclose the URL in **straight double quotes** (`" "`) to prevent terminal errors (especially in Fish or Zsh due to characters like `?` or `&`).
+
+*Example:*
+```bash
+./downloader.sh "https://youtu.be/dQw4w9WgXcQ"
+```
+
+> **Important:** Use only straight double quotes (`" "`) found on your keyboard. Do not use curly/smart typography quotes (like `“ ”` or `„ “`), as they will cause syntax errors in the terminal.
+
+---
+
+## 📝 License
+This project is open-source and available under the [MIT License](LICENSE). Feel free to use, modify, and share it.
